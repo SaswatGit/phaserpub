@@ -185,7 +185,7 @@ rightbtn.on("pointerover", function (pointer) {
   });
   upbtn.on("pointerover", function (pointer) {
     if (player.body.touching.down) {
-      player.setVelocityY(-650);
+      player.setVelocityY(-50);
     }
   });
   if (plt1.y > 550) {
