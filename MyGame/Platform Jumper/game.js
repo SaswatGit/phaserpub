@@ -175,15 +175,15 @@ function create() {
   this.physics.add.overlap(player, balls, gameOver, null, this);
 }
 function update() {
-rightbtn.on("pointerdown", function (pointer) {
+rightbtn.on("pointerover", function (pointer) {
     player.anims.play("run", true);
     player.setVelocityX(260);
   });
-  leftbtn.on("pointerdown", function (pointer) {
+  leftbtn.on("pointerover", function (pointer) {
     player.anims.play("walk", true);
     player.setVelocityX(-260);
   });
-  upbtn.on("pointerdown", function (pointer) {
+  upbtn.on("pointerover", function (pointer) {
     if (player.body.touching.down) {
       player.setVelocityY(-650);
     }
