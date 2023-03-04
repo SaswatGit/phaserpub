@@ -164,19 +164,7 @@ function create() {
   rightbtn = this.add.image(700, 550, "right").setInteractive();
   leftbtn = this.add.image(100, 550, "left").setInteractive();
   upbtn = this.add.image(200, 550, "up").setInteractive();
-  rightbtn.on("pointerover", function (pointer) {
-    player.anims.play("run", true);
-    player.setVelocityX(260);
-  });
-  leftbtn.on("pointerover", function (pointer) {
-    player.anims.play("walk", true);
-    player.setVelocityX(-260);
-  });
-  upbtn.on("pointerover", function (pointer) {
-    if (player.body.touching.down) {
-      player.setVelocityY(-560);
-    }
-  });
+  
  
   this.physics.add.collider(player, platforms);
   this.physics.add.collider(player, moveplatforms);
@@ -187,7 +175,19 @@ function create() {
   this.physics.add.overlap(player, balls, gameOver, null, this);
 }
 function update() {
-
+  rightbtn.on("pointerover", function (pointer) {
+    player.anims.play("run", true);
+    player.setVelocityX(260);
+  });
+  leftbtn.on("pointerover", function (pointer) {
+    player.anims.play("walk", true);
+    player.setVelocityX(-260);
+  });
+  upbtn.on("pointerover", function (pointer) {
+    if (player.body.touching.down) {
+      player.setVelocityY(-50);
+    }
+  });
   if (plt1.y > 550) {
     plt1.y = -20;
     plt1.x = Phaser.Math.Between(0, 800);
