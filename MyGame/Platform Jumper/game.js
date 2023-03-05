@@ -186,7 +186,7 @@ function update() {
   });
   upbtn.on("pointerover", function (pointer) {
     if (player.body.touching.down) {
-      player.setVelocityY(-50);
+      player.setVelocityY(-560);
     }
   });
   if (plt1.y > 550) {
