@@ -48,13 +48,13 @@ body{
     border: none;
 }
 @media screen and (max-width: 1050px){
-    .container{
+    .game-con{
         display: grid;
         grid-template-columns: auto auto;
     }
 }
 @media screen and (max-width: 780px){
-    .container{
+    .game-con{
         display: grid;
         grid-template-columns: auto;
     }
