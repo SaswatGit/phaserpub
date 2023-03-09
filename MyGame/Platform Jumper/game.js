@@ -196,11 +196,11 @@ function create() {
     button.on('pointerup', function(){
         if(this.scale.isFullscreen)
         {
-            button.setFrame(1);
+            button.setFrame(0);
             this.scale.stopFullscreen();
         }
         else{
-            button.setFrame(0);
+            button.setFrame(1);
             this.scale.startFullscreen();
         }
     }, this);
