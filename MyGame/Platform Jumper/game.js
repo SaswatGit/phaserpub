@@ -4,7 +4,7 @@ var config = {
     mode: Phaser.Scale.FIT,
     parent: "Platform Jumper",
     autoCenter: Phaser.Scale.CENTER_BOTH,
-    width: 1200,
+    width: 800,
     height: 600,
   },
   physics: {
@@ -73,7 +73,7 @@ function preload() {
 function create() {
   collectSound = this.sound.add("collect");
   gameOverSound = this.sound.add("gameover");
-  this.add.image("400", "300", "sky").setScale(2);
+  this.add.image("400", "300", "sky");
   cup = this.physics.add.image(400, 50, "cup").setScale(0.05);
   platforms = this.physics.add.staticGroup();
   platforms.create(400, 580, "ground").setScale(0.5).refreshBody();
