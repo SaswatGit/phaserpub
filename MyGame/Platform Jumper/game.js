@@ -73,7 +73,7 @@ function preload() {
 function create() {
   collectSound = this.sound.add("collect");
   gameOverSound = this.sound.add("gameover");
-  this.add.image("400", "300", "sky");
+  this.add.image("400", "300", "sky").setScale(2);
   cup = this.physics.add.image(400, 50, "cup").setScale(0.05);
   platforms = this.physics.add.staticGroup();
   platforms.create(400, 580, "ground").setScale(0.5).refreshBody();
