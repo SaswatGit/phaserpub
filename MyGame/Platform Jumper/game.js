@@ -4,7 +4,7 @@ var config = {
     mode: Phaser.Scale.FIT,
     parent: "Platform Jumper",
     autoCenter: Phaser.Scale.CENTER_BOTH,
-    width: 800,
+    width: 1200,
     height: 600,
   },
   physics: {
@@ -164,7 +164,7 @@ function create() {
     },
     this
   );
-  rightbtn = this.add.image(700, 550, "right").setInteractive();
+  rightbtn = this.add.image(1100, 550, "right").setInteractive();
   leftbtn = this.add.image(100, 550, "left").setInteractive();
   upbtn = this.add.image(200, 550, "up").setInteractive();
 
