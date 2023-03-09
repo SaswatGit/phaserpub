@@ -164,7 +164,7 @@ function create() {
     },
     this
   );
-  rightbtn = this.add.image(1100, 550, "right").setInteractive();
+  rightbtn = this.add.image(700, 550, "right").setInteractive();
   leftbtn = this.add.image(100, 550, "left").setInteractive();
   upbtn = this.add.image(200, 550, "up").setInteractive();
 
