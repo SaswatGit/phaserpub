@@ -1,0 +1,61 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-image: linear-gradient(rgb(115, 0, 255), rgb(76, 0, 255));
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    background-attachment: fixed;
+}
+.navbar{
+    position: sticky;
+    position: -webkit-sticky;
+    top: 5px;
+    z-index: 1;
+}
+.navbar .list{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    list-style: none;
+    flex-direction: row;
+    background-color: black;
+    height: 7vh;
+    width: 90vw;
+    border-radius: 10px;
+    margin: auto;
+}
+.navbar .list .items a{
+    text-decoration: none;
+    color: rgb(118, 62, 250);
+    font-size: larger;
+}
+.game-con{
+    width: 90vw;
+    margin: auto;
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+.card{
+    background-color: rgb(28, 28, 28);
+    margin: 20px;
+    color: white;
+}
+.btn{
+    background-color: rgb(76, 0, 255);
+    border: none;
+}
+@media screen and (max-width: 1050px){
+    .container{
+        display: grid;
+        grid-template-columns: auto auto;
+    }
+}
+@media screen and (max-width: 780px){
+    .container{
+        display: grid;
+        grid-template-columns: auto;
+    }
+}
