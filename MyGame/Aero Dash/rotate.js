@@ -1,9 +1,7 @@
-let currentOrientation = screen.orientation.type;
-
-screen.orientation.addEventListener('change', function(){
-    let newOrientation = screen.orientation.type;
-    
-    if (newOrientation === 'landscape-primary') {
-    } else if (newOrientation === 'portrait-primary') {
-    }
-});
+screen.orientation.lock('landscape')
+    .then(function() {
+        console.log('Screen orientation locked to landscape mode');
+    })
+    .catch(function(error) {
+        console.error('Error locking screen orientation:', error);
+    });
